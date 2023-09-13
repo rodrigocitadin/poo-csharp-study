@@ -1,6 +1,6 @@
 class Music
 {
-    public Music(string name, int durationInSeconds, Band band)
+    public Music(string name, int durationInSeconds)
     {
         Name = name;
         DurationInSeconds = durationInSeconds;
