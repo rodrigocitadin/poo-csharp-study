@@ -1,13 +1,12 @@
 class Album
 {
-    public Album(string name, List<Music> musics)
+    public Album(string name)
     {
        Name = name;
-       Musics = musics;
+       Musics = new List<Music>();
     } 
 
     public string Name { get; }
     public List<Music> Musics { get; }
-    public int DurationInSeconds => Musics.Sum(m => m.DurationInSeconds);
-    public Band Band => Musics[0].Band;
+    // public int DurationInSeconds => Musics.Sum(m => m.DurationInSeconds);
 }
